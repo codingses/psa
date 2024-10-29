@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    /* Dark background */
+    color: #f0f0f0;
+    /* Light text */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #1e1e1e;
+    /* Dark text */
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+}
+
+input[type=submit] {
+    position: absolute;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    color: #1e1e1e;
+    /* Dark text */
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    border-radius: 14px;
+    background-color: #45a049;
+    text-decoration: none;
+}
+#myProgress {
+    width: 100%;
+    background-color: blue;
+  }
+  
+  #myBar {
+    width: 50%;
+    height: 30px;
+    background-color: red;
+  }
+.content {
+
+    background-color: #1e1e1e;
+    /* Darker background */
+}
+
+/* Style for the wrapper container */
+.input-wrapper {
+    width: 1000px; /* Set the desired width */
+    margin: 10px; /* Add margin as needed */
+  }
+  
+  /* Style for the text input field */
+  .input-wrapper input[type=text] {
+    width: 100%; /* Make the input field take up 100% of the container width */
+    padding: 10px; /* Add padding as needed */
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+    border: 1px solid #ccc; /* Add a border for visual appeal */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    
+    /* Allow the input box to expand vertically */
+    height: auto;
+    
+    /* Disable manual resizing by the user */
+    resize: none;
+  }
+  .input-wrapper input[type=password] {
+    width: 100%; /* Make the input field take up 100% of the container width */
+    padding: 10px; /* Add padding as needed */
+    box-sizing: border-box; /* Include padding and border in the total width/height */
+    border: 1px solid #ccc; /* Add a border for visual appeal */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    
+    /* Allow the input box to expand vertically */
+    height: auto;
+    
+    /* Disable manual resizing by the user */
+    resize: none;
+  }
+  
+p{
+    overflow-wrap: break-word;
+}
+
+#sk {
+  position: absolute;
+  background-color: #4CAF50;
+  border-radius: 10px;
+  color: #1e1e1e;
+  /* Dark text */
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#sk:hover {
+  border-radius: 14px;
+  background-color: #45a049;
+  text-decoration: none;
+}
