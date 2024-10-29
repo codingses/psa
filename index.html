@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Don't Drink Alcohol</title>
+        <link rel="stylesheet" href="/static/style.css">
+        <link rel="shortcut icon" href="/static/favicon.ico">
+        <style>
+            body {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+            }
+            .container {
+                position: relative;
+                display: inline-block;
+            }
+            .button {
+                border-radius: 99px;
+                z-index: 4;
+                position: absolute;
+                background-color: rgb(128, 0, 255);
+                border: 3px solid #ffffff;
+                padding: 10px;
+                max-width:1px;
+                cursor: pointer;
+            }
+            {% for thing in tooltips %}
+            .buttonl{{thing.id}} {
+                left:{{thing.x}}px;
+                top:{{thing.y}}px;
+            }
+            {%if thing.style%}
+            .tooltipl{{thing.id}} {
+                {{thing.style}}
+            }{%endif%}
+            {%endfor%}
+            .tooltip {
+                visibility: hidden;
+                background-color: black;
+                color: white;
+                text-align: center;
+                border-radius: 15px;
+                padding: 2px; /* Adjust as needed */
+                /*font-size: 16px; /* Adjust for readability */
+                
+                max-width: 1500px; /* Set a max-width to control wrapping */
+                width: auto; /* Allow width to adjust based on content */
+                height: auto; /* Height adjusts to content */
+                position: absolute; /* Position independently of the button */
+                z-index: 500;
+                bottom: 100%; /* Position above the button */
+                left: 50%;
+                transform: translateX(-50%);
+                margin-bottom: 5px;
+                transition: visibility 0s, opacity 0.5s linear;
+                opacity: 0;
+                white-space: normal; /* Allow text to wrap */
+                box-sizing: border-box; /* Include padding in width/height */  
+                
+            }
+            .button:hover .tooltip {
+                visibility: visible;
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="font-size:90px;margin-top: 0px;">Don't Drink Alcohol - PSA</h1>
+        <div class="container">
+            <img src="/static/brainjif.png" alt="Image" style="position:relative;z-index: 1;top:-100px;left:-100px;" width="650">
+            <img src="/static/nueron.png" style="position:relative;bottom:600px;left:470px;z-index: 1;" alt="Image" width="800">
+            {% for thing in tooltips %}
+            <div class="button buttonl{{thing.id}}" onclick="console.log('')">
+                <div class="tooltip tooltipl{{thing.id}}"><p >{{thing.tooltip}}</p></div>
+            </div>
+            {%endfor%}
+        </div>
+        <p style="font-size:5px;position:absolute;bottom:0px;">Sources: Works CitedAkre, karin. “Cerebral Cortex | Description, Anatomy, Function, & Disease | Britannica.” Www.britannica.com, 1 May 2023, www.britannica.com/science/cerebral-cortex. Accessed 20 Oct. 2024.Britannica. “Brain | Definition, Parts, Functions, & Facts.” Encyclopædia Britannica, 2019, www.britannica.com/science/brain. Accessed 20 Oct. 2024.Cafasso, Jacquelyn. “Alcohol-Related Neurologic Disease: Definition and Patient Education.” Healthline, edited by Seunggu Han, 17 Sept. 2018, www.healthline.com/health/alcohol-related-neurologic-disease#causes. Accessed 16 Oct. 2024.Egervari, Gabor, et al. “Alcohol and the Brain: From Genes to Circuits.” Trends in Neurosciences, vol. 44, no. 12, Dec. 2021, https://doi.org/10.1016/j.tins.2021.09.006. Accessed 16 Oct. 2024.Ioanas, Horea-Ioan, et al. “Whole-Brain Opto-FMRI Map of Mouse VTA Dopaminergic Activation Reflects Structural Projections with Small but Significant Deviations.” Translational Psychiatry, vol. 12, no. 1, Feb. 2022, https://doi.org/10.1038/s41398-022-01812-5. Accessed 20 Oct. 2024.Keller, Amy. “Alcohol and Dopamine.” Drug Rehab, 5 Feb. 2018, www.drugrehab.com/addiction/alcohol/alcoholism/alcohol-and-dopamine/. Accessed 20 Oct. 2024.Lovinger, David M. “Communication Networks in the Brain: Neurons, Receptors, Neurotransmitters, and Alcohol.” Alcohol Research & Health, vol. 31, no. 3, 2024, p. 196, pmc.ncbi.nlm.nih.gov/articles/PMC3860493/.Marshall, Steven. “Sleep Statistics and Facts about Sleep Deprivation.” NCOA Adviser, 7 Mar. 2024, www.ncoa.org/adviser/sleep/sleep-statistics/. Accessed 20 Oct. 2024.Stanborough, Rebecca. “Understanding Cognitive Decline: How Your Brain Changes as You Age.” Healthline, 5 Oct. 2022, www.healthline.com/health/cognitive-decline. Accessed 20 Oct. 2024.Vaillant, George E., and Mark Keller. “Alcohol Consumption.” Encyclopædia Britannica, 14 May 2018, www.britannica.com/topic/alcohol-consumption. Accessed 20 Oct. 2024.</p>
+    </body>
+</html>
