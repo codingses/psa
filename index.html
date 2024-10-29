@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html> 
-    <head>
+<!DOCTYPE html><html><head><style data-merge-styles="true"></style>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Don't Drink Alcohol</title>
@@ -26,16 +24,79 @@
                 max-width:1px;
                 cursor: pointer;
             }
-            {% for thing in tooltips %}
-            .buttonl{{thing.id}} {
-                left:{{thing.x}}px;
-                top:{{thing.y}}px;
+            
+            .buttonl0 {
+                left:154px;
+                top:238px;
             }
-            {%if thing.style%}
-            .tooltipl{{thing.id}} {
-                {{thing.style}}
-            }{%endif%}
-            {%endfor%}
+            
+            .tooltipl0 {
+                min-width:300px;
+            }
+            
+            .buttonl1 {
+                left:334px;
+                top:21px;
+            }
+            
+            .tooltipl1 {
+                min-width:330px;
+            }
+            
+            .buttonl2 {
+                left:224px;
+                top:186px;
+            }
+            
+            .tooltipl2 {
+                min-width:300px;
+            }
+            
+            .buttonl3 {
+                left:1087px;
+                top:14px;
+            }
+            
+            .tooltipl3 {
+                min-width:300px;
+            }
+            
+            .buttonl4 {
+                left:137px;
+                top:6px;
+            }
+            
+            .tooltipl4 {
+                min-width:280px;font-size:13px;
+            }
+            
+            .buttonl5 {
+                left:653px;
+                top:175px;
+            }
+            
+            .tooltipl5 {
+                min-width:300px;
+            }
+            
+            .buttonl6 {
+                left:63px;
+                top:142px;
+            }
+            
+            .tooltipl6 {
+                min-width:150px;font-size:14px;
+            }
+            
+            .buttonl7 {
+                left:537px;
+                top:28px;
+            }
+            
+            .tooltipl7 {
+                min-width:300px;font-size:14px;
+            }
+            
             .tooltip {
                 visibility: hidden;
                 background-color: black;
@@ -71,12 +132,40 @@
         <div class="container">
             <img src="/static/brainjif.png" alt="Image" style="position:relative;z-index: 1;top:-100px;left:-100px;" width="650">
             <img src="/static/nueron.png" style="position:relative;bottom:600px;left:470px;z-index: 1;" alt="Image" width="800">
-            {% for thing in tooltips %}
-            <div class="button buttonl{{thing.id}}" onclick="console.log('')">
-                <div class="tooltip tooltipl{{thing.id}}"><p >{{thing.tooltip}}</p></div>
+            
+            <div class="button buttonl0" onclick="console.log('')">
+                <div class="tooltip tooltipl0"><p>Cerebellum-Alcohol affects the cerebellum, which the body relies on for awareness and coordination. After drinking too much, a person might misjudge dangerous situations or be too uncoordinated to prevent accidents. This is why people get pulled over for being drunk while driving; they get pulled over and receive a DUI since they could run something or someone over and kill multiple people.</p></div>
             </div>
-            {%endfor%}
+            
+            <div class="button buttonl1" onclick="console.log('')">
+                <div class="tooltip tooltipl1"><p>The frontal lobe is responsible for reasoning, social understanding, and executive functions. Alcohol can make the frontal lobe shrink in size, cause deficiencies in white matter in the brain, and decreased cerebral blood flow. This causes people to be unable to control their emotions and make irrational decisions.</p></div>
+            </div>
+            
+            <div class="button buttonl2" onclick="console.log('')">
+                <div class="tooltip tooltipl2"><p>Alcohol activates the mesocorticolimbic brain reward circuit, which includes dopainergic projections from the VTA, which control motivation and addiction. This is one of the reasons that alcohol is so addictive.</p></div>
+            </div>
+            
+            <div class="button buttonl3" onclick="console.log('')">
+                <div class="tooltip tooltipl3"><p>Alcohol can bind to dopamine and opioid receptors, releasing dopamine and endorphins, so it makes people feel good right after drinking alcohol, and activates reward/reinforcement systems.</p></div>
+            </div>
+            
+            <div class="button buttonl4" onclick="console.log('')">
+                <div class="tooltip tooltipl4"><p>The parietal lobe is in charge of sense of touch, motor skills, coordination, and complex movements. It is also responsible for special awareness and a sense of distance. It also assists in the recognition of sizes, colors, and shapes. Alcohol can cause a loss of hearing, balance, and a delay in reaction time.  Alcohol can also cause a loss of spatial awareness or a lack of sensory information.</p></div>
+            </div>
+            
+            <div class="button buttonl5" onclick="console.log('')">
+                <div class="tooltip tooltipl5"><p>In the nucleus of the neuron, alcohol has complex effects on the epigenetic regulation of gene expression, which is how the cell interprets it's DNA. In other words, by changing how the cell interprets its DNA, it is able to effectively alter the behavior of the cell.</p></div>
+            </div>
+            
+            <div class="button buttonl6" onclick="console.log('')">
+                <div class="tooltip tooltipl6"><p>The occipital lobe is responsible for processing visual information. The occipital lobe is a key part in color perception, depth perception, and motion detection. Alcohol can cause the occipital lobe to have trouble detecting objects or movement in objects. Alcohol can cause vision to become blurred or impaired.</p></div>
+            </div>
+            
+            <div class="button buttonl7" onclick="console.log('')">
+                <div class="tooltip tooltipl7"><p>Alcohol does not cause neurons to die, but it does damage dendrites, making communication between affected neurons harder.</p></div>
+            </div>
+            
         </div>
-        <p style="font-size:5px;position:absolute;bottom:0px;">Sources: Works CitedAkre, karin. “Cerebral Cortex | Description, Anatomy, Function, & Disease | Britannica.” Www.britannica.com, 1 May 2023, www.britannica.com/science/cerebral-cortex. Accessed 20 Oct. 2024.Britannica. “Brain | Definition, Parts, Functions, & Facts.” Encyclopædia Britannica, 2019, www.britannica.com/science/brain. Accessed 20 Oct. 2024.Cafasso, Jacquelyn. “Alcohol-Related Neurologic Disease: Definition and Patient Education.” Healthline, edited by Seunggu Han, 17 Sept. 2018, www.healthline.com/health/alcohol-related-neurologic-disease#causes. Accessed 16 Oct. 2024.Egervari, Gabor, et al. “Alcohol and the Brain: From Genes to Circuits.” Trends in Neurosciences, vol. 44, no. 12, Dec. 2021, https://doi.org/10.1016/j.tins.2021.09.006. Accessed 16 Oct. 2024.Ioanas, Horea-Ioan, et al. “Whole-Brain Opto-FMRI Map of Mouse VTA Dopaminergic Activation Reflects Structural Projections with Small but Significant Deviations.” Translational Psychiatry, vol. 12, no. 1, Feb. 2022, https://doi.org/10.1038/s41398-022-01812-5. Accessed 20 Oct. 2024.Keller, Amy. “Alcohol and Dopamine.” Drug Rehab, 5 Feb. 2018, www.drugrehab.com/addiction/alcohol/alcoholism/alcohol-and-dopamine/. Accessed 20 Oct. 2024.Lovinger, David M. “Communication Networks in the Brain: Neurons, Receptors, Neurotransmitters, and Alcohol.” Alcohol Research & Health, vol. 31, no. 3, 2024, p. 196, pmc.ncbi.nlm.nih.gov/articles/PMC3860493/.Marshall, Steven. “Sleep Statistics and Facts about Sleep Deprivation.” NCOA Adviser, 7 Mar. 2024, www.ncoa.org/adviser/sleep/sleep-statistics/. Accessed 20 Oct. 2024.Stanborough, Rebecca. “Understanding Cognitive Decline: How Your Brain Changes as You Age.” Healthline, 5 Oct. 2022, www.healthline.com/health/cognitive-decline. Accessed 20 Oct. 2024.Vaillant, George E., and Mark Keller. “Alcohol Consumption.” Encyclopædia Britannica, 14 May 2018, www.britannica.com/topic/alcohol-consumption. Accessed 20 Oct. 2024.</p>
-    </body>
-</html>
+        <p style="font-size:5px;position:absolute;bottom:0px;">Sources: Works CitedAkre, karin. “Cerebral Cortex | Description, Anatomy, Function, &amp; Disease | Britannica.” Www.britannica.com, 1 May 2023, www.britannica.com/science/cerebral-cortex. Accessed 20 Oct. 2024.Britannica. “Brain | Definition, Parts, Functions, &amp; Facts.” Encyclopædia Britannica, 2019, www.britannica.com/science/brain. Accessed 20 Oct. 2024.Cafasso, Jacquelyn. “Alcohol-Related Neurologic Disease: Definition and Patient Education.” Healthline, edited by Seunggu Han, 17 Sept. 2018, www.healthline.com/health/alcohol-related-neurologic-disease#causes. Accessed 16 Oct. 2024.Egervari, Gabor, et al. “Alcohol and the Brain: From Genes to Circuits.” Trends in Neurosciences, vol. 44, no. 12, Dec. 2021, https://doi.org/10.1016/j.tins.2021.09.006. Accessed 16 Oct. 2024.Ioanas, Horea-Ioan, et al. “Whole-Brain Opto-FMRI Map of Mouse VTA Dopaminergic Activation Reflects Structural Projections with Small but Significant Deviations.” Translational Psychiatry, vol. 12, no. 1, Feb. 2022, https://doi.org/10.1038/s41398-022-01812-5. Accessed 20 Oct. 2024.Keller, Amy. “Alcohol and Dopamine.” Drug Rehab, 5 Feb. 2018, www.drugrehab.com/addiction/alcohol/alcoholism/alcohol-and-dopamine/. Accessed 20 Oct. 2024.Lovinger, David M. “Communication Networks in the Brain: Neurons, Receptors, Neurotransmitters, and Alcohol.” Alcohol Research &amp; Health, vol. 31, no. 3, 2024, p. 196, pmc.ncbi.nlm.nih.gov/articles/PMC3860493/.Marshall, Steven. “Sleep Statistics and Facts about Sleep Deprivation.” NCOA Adviser, 7 Mar. 2024, www.ncoa.org/adviser/sleep/sleep-statistics/. Accessed 20 Oct. 2024.Stanborough, Rebecca. “Understanding Cognitive Decline: How Your Brain Changes as You Age.” Healthline, 5 Oct. 2022, www.healthline.com/health/cognitive-decline. Accessed 20 Oct. 2024.Vaillant, George E., and Mark Keller. “Alcohol Consumption.” Encyclopædia Britannica, 14 May 2018, www.britannica.com/topic/alcohol-consumption. Accessed 20 Oct. 2024.</p>
+    
+</body></html>
